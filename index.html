@@ -1833,4 +1833,91 @@ document.addEventListener('keydown', function(e){
    </input>
   </input>
  </body>
+ 
+    <style>
+     
+.float-btn{
+    position: fixed;
+    left: 20px;
+    z-index: 999999;
+    bottom: 20px;
+
+    padding: 12px 20px;
+    border-radius: 50px;
+    font: bold 16px Arial, sans-serif;
+    text-decoration: none !important;
+    color: #ffffff;
+
+    background: linear-gradient(135deg, #00a6ff, #0283d9, #e100ff);
+    box-shadow:
+        0 0 10px #0984ff,
+        0 0 20px #04eff3,
+        0 0 30px rgba(0, 30, 255, 0.518);
+
+    overflow: hidden;
+    animation: pulse 2s infinite, blink 1.2s infinite;
+}
+
+.float-btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.9),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+    animation: shine 3s infinite;
+}
+
+#nastartoto-btn{
+    bottom: 80px;
+}
+
+#prediksi-btn{
+    bottom: 20px;
+}
+
+@keyframes pulse{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+}
+
+@keyframes blink{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: .85;
+    }
+}
+
+@keyframes shine{
+    from{
+        left: -150%;
+    }
+    to{
+        left: 150%;
+    }
+}
+</style>
+
+<a class="float-btn"
+   href="https://pagarslot5.2024-maxwin.com/"
+   id="prediksi-btn"
+   target="_blank">
+   🎰 RTP GACOR !!!
+</a>
+
 </html>
